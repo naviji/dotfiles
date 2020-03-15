@@ -1,4 +1,2 @@
 alias open=xdg-open
 
-
-
