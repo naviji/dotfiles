@@ -1,0 +1,4 @@
+alias open=xdg-open
+
+
+
