@@ -1,0 +1,31 @@
+
+# TAB cycles forward through completion choices. Press an arrow key to choose a
+# selection.
+TAB: menu-complete
+# Shift-TAB cycles backward through completion choices. Press an arrow key to
+# choose a selection.
+"\e[Z": menu-complete-backward
+
+# Improve completions. Refer to 'man bash', "Readline Variables" section.
+#
+# Enable completion coloring.
+set colored-completion-prefix on
+set colored-stats on
+# Ignore case when completing.
+set completion-ignore-case on
+# Treat hypen and underscores as equivalent.
+set completion-map-case on
+# Don't automatically match files beginning with dot.
+set match-hidden-files off
+# Display the common prefix choices on the first completion then cycle the
+# available choices on the next completion.
+set menu-complete-display-prefix on
+# Immediately display completion matches.
+set show-all-if-ambiguous on
+# Automatically add slash to the end of symlinked directories when completing.
+set mark-symlinked-directories on
+
+# Keep terminal quiet and clean.
+set bell-style none
+set echo-control-characters off
+
