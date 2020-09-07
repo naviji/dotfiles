@@ -81,5 +81,25 @@ inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 set showcmd showmode confirm ruler
 
+set shell=bash " required
+filetype off " required
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'ycm-core/YouCompleteMe'
 
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+let g:ycm_clangd_binary_path = "/usr/bin/clangd"
+
+" http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#Using_Vi_instead_of_Emacs
+set shiftwidth=4
+set autoindent
+set backup
+set cindent
+set hlsearch
+set incsearch
+set showmatch
