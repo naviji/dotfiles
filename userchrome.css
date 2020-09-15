@@ -1,0 +1,47 @@
+/* For styling the entire Joplin app (except the rendered Markdown, which is defined in `userstyle.css`) */
+
+.header .title {
+    display: none !important;
+}
+
+
+.editor-toolbar {
+    display: none !important;
+}
+
+a.button[title="Code View"] {
+    display: none !important;
+}
+
+input[placeholder="Search..."] {
+    border-radius: 6px;
+}
+
+#react-root > div > div > div.header > a:nth-child(7) {
+    display: none !important;
+}
+
+#react-root > div > div > div.header > a:nth-child(5) {
+    display: none !important;
+}
+
+#react-root > div > div > div:nth-child(8) > div > div:nth-child(1) > input[type=text] {
+    border-left: none !important;
+    border-top: none !important;
+    border-right: none !important;
+    font-size: larger !important;
+}
+
+#react-root > div > div > div:nth-child(8) > div > div:nth-child(1) > span {
+    display: none !important;
+}
+
+textarea:focus, input:focus {
+    outline: none !important;
+}
+
+#react-root > div > div > div:nth-child(8) > div > div:nth-child(1) {
+    display: none;
+}
+
+

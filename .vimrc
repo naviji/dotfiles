@@ -26,7 +26,7 @@ set number
 " This is useful because you can tell, at a glance, what count is needed to
 " jump up or down to a particular line, by {count}k to go up or {count}j to go
 " down.
-set relativenumber
+" set relativenumber
 
 " Always show the status line at the bottom, even if you only have one window open.
 set laststatus=2
@@ -102,4 +102,7 @@ set backup
 set cindent
 set hlsearch
 set incsearch
-set showmatch
+
+" let g:ycm_show_diagnostics_ui = 0
+let g:ycm_enable_diagnostic_highlighting = 0
+set completeopt-=preview
