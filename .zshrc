@@ -10,6 +10,7 @@ export NVM_DIR="$HOME/.nvm"
 
 
 alias ga="git add"
+alias gaa="git add ."
 alias gs="git status"
 alias gc="git commit -m"
 alias gpo="git push origin"
