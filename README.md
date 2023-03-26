@@ -9,3 +9,5 @@ Left option -> left command
 Install Alacritty
 Install ohmyzsh
 brew install git
+Install nvm
+jabba?
