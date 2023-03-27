@@ -16,11 +16,11 @@ alias decrypt='function _decrypt() {
  openssl aes-256-cbc -d -in $1 -out $2;
 };_decrypt'
 
-alias ga="git add -a"
+alias ga="git add"
 alias gaa="git add ."
 alias gs="git status"
 alias gc="git commit -m checkpoint"
-alias gac="gaa & gc"
+alias gac="gaa && gc"
 alias gcm="git commit"
 alias gpo="git push origin"
 alias gpu="git push upstream"
