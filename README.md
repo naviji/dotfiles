@@ -11,3 +11,6 @@ Install ohmyzsh
 brew install git
 Install nvm
 jabba?
+
+
+https://github.com/tmux/tmux/wiki/Getting-Started
