@@ -8,8 +8,15 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+alias encrypt='function _encrypt() {
+ openssl aes-256-cbc -salt -in $1 -out $2;
+};_encrypt'
 
-alias ga="git add"
+alias decrypt='function _decrypt() {
+ openssl aes-256-cbc -d -in $1 -out $2;
+};_decrypt'
+
+alias ga="git add -a"
 alias gaa="git add ."
 alias gs="git status"
 alias gc="git commit -m checkpoint"
